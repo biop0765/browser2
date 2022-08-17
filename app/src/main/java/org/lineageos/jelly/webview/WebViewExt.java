@@ -90,6 +90,7 @@ public class WebViewExt extends WebView {
 
     private void setup() {
         getSettings().setJavaScriptEnabled(false);
+        getSettings().setLoadsImagesAutomatically(false);
         getSettings().setJavaScriptCanOpenWindowsAutomatically(PrefsUtils.getJavascript(mActivity));
         getSettings().setGeolocationEnabled(false);
         getSettings().setSupportMultipleWindows(true);

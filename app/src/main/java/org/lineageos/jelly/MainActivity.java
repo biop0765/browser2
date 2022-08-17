@@ -116,7 +116,7 @@ import java.util.List;
 public class MainActivity extends WebViewExtActivity implements
         SearchBarController.OnCancelListener {
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String PROVIDER = "com.oF2pks.browser1.fileprovider";
+    private static final String PROVIDER = "com.oF2pks.browser2.fileprovider";
     private static final String STATE_KEY_THEME_COLOR = "theme_color";
     private static final int STORAGE_PERM_REQ = 423;
     private static final int LOCATION_PERM_REQ = 424;

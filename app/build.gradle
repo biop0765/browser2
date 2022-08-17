@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "com.oF2pks.browser1"
+        applicationId "com.oF2pks.browser2"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 17

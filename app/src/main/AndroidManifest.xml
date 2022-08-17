@@ -163,7 +163,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.oF2pks.browser1.fileprovider"
+            android:authorities="com.oF2pks.browser2.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -173,12 +173,12 @@
 
         <provider
             android:name=".favorite.FavoriteProvider"
-            android:authorities="com.oF2pks.browser1.favorite"
+            android:authorities="com.oF2pks.browser2.favorite"
             android:exported="false" />
 
         <provider
             android:name=".history.HistoryProvider"
-            android:authorities="com.oF2pks.browser1.history"
+            android:authorities="com.oF2pks.browser2.history"
             android:exported="false" />
 
         <meta-data

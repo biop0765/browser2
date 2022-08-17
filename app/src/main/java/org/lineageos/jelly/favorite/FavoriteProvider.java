@@ -196,7 +196,7 @@ public class FavoriteProvider extends ContentProvider {
     }
 
     public interface Columns extends BaseColumns {
-        String AUTHORITY = "com.oF2pks.browser1.favorite";
+        String AUTHORITY = "com.oF2pks.browser2.favorite";
         Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/favorite");
 
         String TITLE = "title";
