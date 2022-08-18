@@ -1,4 +1,8 @@
 # Jelly Browser
+
+* Images disabled
+* Javascript disabled
+
 Jelly browser with ads blocker, support for android 6.0+, a few ui changes and some bug fixes.
 Ads blocker and favicon in search bar based on this: https://github.com/CarbonROM/android_packages_apps_Quarks
 
