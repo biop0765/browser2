@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Browser1</string>
+    <string name="app_name">B2</string>
 
     <!-- Menu action: create new tab -->
     <string name="menu_new_tab">New tab</string>
@@ -45,7 +45,7 @@
     <!-- Menu action: search in page -->
     <string name="menu_search">Find in page</string>
     <!-- Menu action: print -->
-    <string name="menu_print">Print</string>
+    <string name="menu_print">Exit</string>
 
     <string name="tabs_info">\u2936LongClick\u205E\nTabs manager</string>
     <string name="kill_all">kill_all Tabs</string>
@@ -182,10 +182,9 @@
     <!-- No activity found to open the given url error -->
     <string name="error_no_activity_found">No app can handle this link</string>
 
-    <string translatable="false" name="default_search_engine">https://google.com/?q={searchTerms}</string>
-    <string translatable="false" name="default_home_page">https://news.google.com</string>
+    <string translatable="false" name="default_search_engine">https://google.com/search?ie=UTF-8&amp;source=android-browser&amp;q={searchTerms}</string>
+    <string translatable="false" name="default_home_page">https://google.com</string>
     <string translatable="false" name="default_suggestion_provider">GOOGLE</string>
-
 
     <!-- Auth dialog: title -->
     <string name="auth_dialog_title">Authentication Required</string>

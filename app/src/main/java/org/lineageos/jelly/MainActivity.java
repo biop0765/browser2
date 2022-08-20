@@ -485,12 +485,13 @@ public class MainActivity extends WebViewExtActivity implements
                 } else if (itemId == R.id.menu_shortcut) {
                     addShortcut(mWebView.getTitle(), mWebView.getUrl());
                 } else if (itemId == R.id.menu_print) {
-                    PrintManager printManager = getSystemService(PrintManager.class);
-                    String documentName = "jQ" + mWebView.getTitle().replaceAll("[^a-zA-Z0-9\\-]", "_");
-                    PrintDocumentAdapter printAdapter =
-                            mWebView.createPrintDocumentAdapter(documentName);
-                    printManager.print(documentName, printAdapter,
-                            new PrintAttributes.Builder().build());
+                        try {
+                            // clearing app data
+                            Runtime runtime = Runtime.getRuntime();
+                            runtime.exec("pm clear com.oF2pks.browser2");
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
                 } else if (itemId == R.id.save_mht) {
                     if (Build.VERSION.SDK_INT < 29) {
                         mWebView.saveWebArchive(pathSaveWebArchive() + nameSaveWebArchive());
