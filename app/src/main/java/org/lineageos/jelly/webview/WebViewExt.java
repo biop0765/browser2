@@ -25,6 +25,9 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
+
 
 import androidx.collection.ArrayMap;
 
@@ -89,6 +92,8 @@ public class WebViewExt extends WebView {
     }
 
     private void setup() {
+        //getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+        CookieManager.getInstance().setAcceptThirdPartyCookies(this, true);
         getSettings().setJavaScriptEnabled(false);
         getSettings().setLoadsImagesAutomatically(false);
         getSettings().setJavaScriptCanOpenWindowsAutomatically(PrefsUtils.getJavascript(mActivity));

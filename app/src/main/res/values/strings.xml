@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">B2</string>
+    <string name="app_name">B2-i-j</string>
 
     <!-- Menu action: create new tab -->
     <string name="menu_new_tab">New tab</string>
